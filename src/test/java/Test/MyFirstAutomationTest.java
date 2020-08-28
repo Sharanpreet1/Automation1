@@ -36,7 +36,7 @@ public class MyFirstAutomationTest {
         driver.switchTo().frame(0);
 
         //Identify the button and then press "Agree" on pop-up
-        WebElement agreeButton = driver.findElement(By.id("introAgreeButton"));
+        WebElement agreeButton = driver.findElement(By.xpath("//*[text()='Zgadzam się']"));
 
         // clicking "Agree Button"
         agreeButton.click();
@@ -45,11 +45,11 @@ public class MyFirstAutomationTest {
         WebElement searchBar = driver.findElement(By.name("q"));
 
         //Entering words into search bar to search
-        searchBar.sendKeys("Population of world");
+        searchBar.sendKeys("Searches on Google per minute");
 
         //making search button clickable
         WebElement searchButton = driver.findElement(By.className("gNO89b"));
-        WebDriverWait wait = new WebDriverWait(driver,5L);
+        WebDriverWait wait = new WebDriverWait(driver,10L);
         wait.until(ExpectedConditions.elementToBeClickable(searchButton));
         searchButton.click();
 
