@@ -26,9 +26,11 @@ public class AutomationECommerce {
         WebDriver driver = new ChromeDriver();
 
         //Opening web page to test
-        driver.get(" http://automationpractice.com/index.php");
+        String website = " http://automationpractice.com/index.php";
 
-        //Navigation Step 1 - Womens tab
+        driver.get(website);
+
+        /*//Navigation Step 1 - Womens tab
         driver.navigate().to("http://automationpractice.com/index.php?id_category=3&controller=category");
 
         //Navigation Step 2 - Dresses tab
@@ -52,7 +54,7 @@ public class AutomationECommerce {
 
         //searching the value given to search bar
         WebElement hitEnter = driver.findElement(By.name("submit_search"));
-        hitEnter.click();
+        hitEnter.click();*/
 
         //Verifying add to cart functionality by adding product
          WebElement addToCart = driver.findElement(By.xpath("//a[@title='Add to cart']"));
