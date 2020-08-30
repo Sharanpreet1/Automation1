@@ -69,7 +69,7 @@ public class AutomationECommerce {
         //removing product from the cart
        /*WebElement removingProduct = driver.findElement(By.xpath("//a[@title='remove this product from my cart']"));
        removingProduct.click();*/
-      
+
 
 
 
