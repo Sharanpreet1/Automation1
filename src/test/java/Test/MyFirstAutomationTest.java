@@ -31,7 +31,7 @@ public class MyFirstAutomationTest {
         WebDriver driver = new ChromeDriver();
 
         // Launching Google Website
-        driver.get("https://www.bing.com/");
+        driver.get("https://www.google.com/");
 
         //switch to pop-up frame
         driver.switchTo().frame(0);
