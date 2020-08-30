@@ -22,20 +22,21 @@ public class MyFirstAutomationTest {
 
         // setting path for chrome web driver
         System.setProperty("webdriver.chrome.driver", "C:src/drivers/chromedriver.exe");
-
+        //System.setProperty("webdriver")
         System.setProperty("webdriver.gecko.driver","C:src/drivers/geckodriver.exe");
 
-        //System.setProperty("webdriver")
+
+
         // Creating new instance of the chrome driver
         WebDriver driver = new ChromeDriver();
 
         // Launching Google Website
-        driver.get("https://www.google.com/");
+        driver.get("https://www.bing.com/");
 
         //switch to pop-up frame
         driver.switchTo().frame(0);
 
-        //Identify the button and then press "Agree" on pop-up
+        //Identify the button
         WebElement agreeButton = driver.findElement(By.xpath("//*[text()='Zgadzam się']"));
 
         // clicking "Agree Button"
