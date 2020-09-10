@@ -1,4 +1,4 @@
-package Automation;
+package Tests;
 
 import org.omg.CORBA.TIMEOUT;
 import org.openqa.selenium.By;

@@ -1,5 +1,6 @@
-package Automation;
+package Tests.ShopTests;
 
+import Tests.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -8,9 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
-public class searchVerification extends BaseTest{
+public class searchVerification extends BaseTest {
 
     private static final String searchPageTitle = "Search - My Store";
 
@@ -63,7 +62,7 @@ public class searchVerification extends BaseTest{
       wait.until(ExpectedConditions.presenceOfElementLocated(alertLocator));
      WebElement errorMessage = driver.findElement(alertLocator);
 
-      Assert.assertEquals(errorMessage.getText(),"Please enter a search keyword ");
+      Assert.assertEquals(errorMessage.getText(),"No results were found for your search \" \" ");
   }
 
     @Test
